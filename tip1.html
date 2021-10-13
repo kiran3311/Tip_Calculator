@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tip2.css">
+</head>
+
+<body>
+    <div class="main">
+        <form>
+            <h2>Tip Calculator</h2>
+            <div class="form-content">
+                <label for="amt" class="lable">Enter Your Bill amount in Rs</label>
+                <input type="number" id="amt" class="input" name="amt">
+                <small></small>
+            </div>
+            <div class="form-content">
+                <label for="service" class="lable">How was the service?</label>
+                <select name="service" id="service" class="service">
+                    <option value="0.25">25% Exellent</option>
+                    <option value="0.15">15% Medium</option>
+                    <option value="0.05">5% Average</option>
+                </select>
+
+                <small></small>
+            </div>
+            <div class="form-content">
+                <label for="person" class="lable">How many person sharing bill?</label>
+                <input type="number" id="person" class="input" name="person">
+                <small></small>
+            </div>
+            <div class="form-content">
+                <input type="button" value="calculate" id="calculate" class="btn" onclick="calculateTip()">
+            </div>
+            <div class="tip">
+
+
+                <p>Tip Amount</p>
+
+
+
+                <span id="total">0</span>₹   
+                <span id="each">each</span>
+            </div>
+        </form>
+    </div>
+    <script src = "tip3.js"> </script>
+</body>
+
+</html>
